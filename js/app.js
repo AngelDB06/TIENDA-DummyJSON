@@ -368,7 +368,7 @@ function updateAuthUI() {
     if (user) {
         container.innerHTML = `<a href="#" class="nav__link" onclick="logout()">Logout (${user.firstName})</a>`;
     } else {
-        container.innerHTML = `<a href="#" class="nav__link" onclick="changeView('login')">Login</a>`;
+        container.innerHTML = `<a href="#" class="nav__link" data-view="login">Login</a>`;
     }
 }
 
